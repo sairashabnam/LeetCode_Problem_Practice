@@ -20,3 +20,9 @@ class Solution:
 s = Solution()
 t = s.find_the_difference("abcd", "abcde")
 print(t)
+
+se = ""
+t = "y"
+
+t = s.find_the_difference(se, t)
+print(t)

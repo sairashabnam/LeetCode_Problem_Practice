@@ -7,3 +7,12 @@ class Solution:
             if(i < len(word2)):
                 merge_str += word2[i]
         return merge_str
+    
+
+
+s = Solution()
+
+word1 = "abc"
+word2 = "pqr"
+
+print(s.mergeAlternately(word1, word2))

@@ -8,3 +8,11 @@ class Solution:
                 if substring * (n // i) == s:
                     return True
         return False
+    
+
+s = Solution()
+# Example usage:
+print(s.repeatedSubstringPattern("abcabcabc"))  # Output: True
+print(s.repeatedSubstringPattern("abab"))       # Output: True
+print(s.repeatedSubstringPattern("abcdeabcd"))   # Output: False
+print(s.repeatedSubstringPattern("aaaaa"))      # Output: True

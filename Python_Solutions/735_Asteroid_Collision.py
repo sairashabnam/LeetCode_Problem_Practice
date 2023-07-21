@@ -1,5 +1,5 @@
 class Solution:
-    def asteroidCollision(self, asteroids: List[int]) -> List[int]:
+    def asteroidCollision(self, asteroids: list[int]) -> list[int]:
         stack = []
 
         for asteroid in asteroids:
@@ -21,3 +21,23 @@ class Solution:
                     stack.pop()
 
         return stack
+
+
+
+s = Solution()
+# Example usage:
+asteroids = [5, 10, -5]
+result = s.asteroidCollision(asteroids)
+print(result)  # Output: [5, 10]
+
+asteroids = [8, -8]
+result = s.asteroidCollision(asteroids)
+print(result)  # Output: []
+
+asteroids = [10, 2, -5]
+result = s.asteroidCollision(asteroids)
+print(result)  # Output: [10]
+
+asteroids = [-2, -1, 1, 2]
+result = s.asteroidCollision(asteroids)
+print(result)  # Output: [-2, -1, 1, 2]

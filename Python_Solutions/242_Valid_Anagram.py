@@ -15,3 +15,13 @@ class Solution:
             return True
         else:
             return False
+        
+
+s = Solution()
+# Another example with phrases:
+phrase1 = "Astronomer"
+phrase2 = "Moon starer"
+if s.isAnagram(phrase1, phrase2):
+    print(f"{phrase1} and {phrase2} are anagrams.")
+else:
+    print(f"{phrase1} and {phrase2} are not anagrams.")        
